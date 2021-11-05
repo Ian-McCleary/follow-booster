@@ -1,4 +1,4 @@
-# MyApp
+# Follow-Booster
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
@@ -6,22 +6,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About
+<p>
+This is an Instagram follow boosting web app which connects users who want to increase their follower count. The idea is that a user can use two accounts to follow
+and recieve followers. Two users are then connected through the application, and exchange follows in a follow for follow trade. Users can also see insights into their
+follower growth and chat with other users on the site.
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Reason for public
 
-## Build
+<p>
+There are 3 reasons I decided to make this repository public. First, It relied on web scraping an Instagram viewer which is no longer online. I was unable
+to gain access to the Instagram API so this was the unfortunate workaround. Second, It had a few backend security issues which I didnt have time to address.
+Lastly, Id like to prove to employers that I have experience in AngularJS.
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Namespace change for git
 
-## Running unit tests
+This project has been renamed from the origional namespace 'my-app'
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
