@@ -1,0 +1,61 @@
+<div class="container" style="padding-top: 50px;">
+    <div class="row">
+        <div class="col">
+            <h6><u>Linked Account</u></h6>
+            <div class="row" style="padding-top:20px;">
+                <div class="col-1">
+                    <img src="{{userProfile.profilePic}}" class="rounded-circle" alt="profile picture" width="35" height="35">
+                </div>
+                <div class="col">
+                    <h6>Name:</h6>{{userProfile.name}}
+                </div>
+                <div class="col">
+                    <h6>Username:</h6>{{userProfile.username}}
+                </div>
+                <div class="col">
+                    Valid Account
+                    <input type="checkbox" aria-label="Checkbox for Valid account" disabled checked>
+                </div>
+                <div class="col">
+                    Not Private
+                    <input type="checkbox" aria-label="Checkbox for Valid account" disabled checked>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary" >Check Private Status</button>
+                </div>
+            </div>
+            <div class="row" style="padding-top:100px;">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateModal">Update Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change Linked Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Instagram Username: @</span>
+                </div>
+                <input type="text" class="form-control">
+
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

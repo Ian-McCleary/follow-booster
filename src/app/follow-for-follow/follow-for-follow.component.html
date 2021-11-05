@@ -1,0 +1,29 @@
+<!--Follow 4 Follow component's main body. 3 lists of users to follow/unfollow-->
+<div class="container">
+    <div class="row">
+        <div class="col" id="FollowMore">
+            <h5> Follow Some Accounts </h5>
+            <div class="list-group">
+                <a *ngFor="let profile of profiles" href="{{profile.profileLink}}" target="popup"  class="list-group-item list-group-item-action">
+                    <img src="{{profile.profilePic}}" class="rounded-circle" alt="profile picture" width="25" height="25"> {{profile.name}} 
+                </a>
+            </div>
+        </div>
+        <div class="col" id="FollowBack">
+            <h5> Follow Back </h5>
+            <div class="list-group">
+                <a *ngFor="let profile of profiles" class="list-group-item list-group-item-action">
+                    <img src="{{profile.profilePic}}" class="rounded-circle" alt="profile picture" width="25" height="25"> {{profile.name}} 
+                </a>
+            </div>
+        </div>
+        <div class="col" id="PendingFollowers">
+            <h5> Pending Followers </h5>
+            <div class="list-group">
+                <a *ngFor="let profile of profiles" class="list-group-item list-group-item-action">
+                    <img src="{{profile.profilePic}}" class="rounded-circle" alt="profile picture" width="25" height="25"> {{profile.name}} 
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
